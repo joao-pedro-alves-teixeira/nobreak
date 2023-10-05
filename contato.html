@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+	<head>
+         <title>Converse conosco!</title>
+	     <meta charset="utf-8"/> 
+		 <meta name="viewport" content="width=device-width, inicial-scale=1"/> 
+		 <link rel="icon"  type="image/jpg"      href="img/fone.png"/> 
+		 <link rel="stylesheet" type="text/css" href="style.css">
+			<script language = "javascript" type = "text/javascript">
+				function validar(){
+					var nome = form1.nome.value;
+					var email = form1.email.value;
+					var fone = form1.fone.value;
+					var compra = form1.compra.value;
+						if(nome == ""){
+							alert("Preencha o campo com seu nome!");
+							form1.nome.focus();
+							return false;
+						}
+							
+						if(email == ""){
+							alert("Preencha o campo com seu Email!");
+							form1.email.focus();
+							return false;
+						}
+		
+						if(fone == ""){
+							alert("Preencha o campo com seu Telefone!");
+							form1.fone.focus();
+							return false;
+						}	
+							
+							if(compra == "Selecione"){
+							alert("Selecione uma das opções!");
+							form1.compra.focus();
+							return false;
+						}	
+					}
+			</script>
+	</head>
+	<body>
+		<nav>
+			<img id="1" src="img/icone.png" width= "100" height="100">
+			 <ul id="nav">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="sobre.html">SOBRE</a></li>
+				<li><a href="modelo.html">MODELO</a></li>
+				<li><a href="contato.html" class="ativa">CONTATO</a></li>
+			 </ul>
+		</nav>
+		<br><br><br>
+            <p class="center">Coloque meios possíveis de contato</p>
+				<p class="center"><mark>Preencha todos os campos.</mark></p>
+				<p class="center"><mark>Isso para que eu possa responder qualquer dúvida,feedback ou comentário que quiser me enviar,por meio da área de observações.</mark></p>
+		<form class="center" name = "form1" action = "resposta.html"method = "post">
+			<p class="center">Nome:</p> <input type = "text" name = "nome" value = "" size = "15" maxlength = "15">
+			<p class="center">Email:</p> <input type = "text" name = "email" value = "" size = "20" maxlength = "20">
+		    <p class="center">Telefone:</p>	<input type = "text" name = "fone" value = "" size = "15" maxlength = "15">	
+        	<p class="center">Qual modelo te interessou mais?</p>
+                <select name="compra">	
+					<option> Selecione</option>
+					<option> No break modelo ATTIV 1200VA-BI</option>
+					<option> No break modelo XNB 1800</option>
+					<option> No break modelo Ultra UPS1500</option>
+					<option> Filtro de Linha modelo iClamper Energia 5</option>
+					<option> Filtro de Linha modelo iCLAMPER Energia 8</option>
+					<option> Filtro de Linha modelo 1CABO10-ESPN</option>
+					<option> Estabilizador modelo PER-101</option>
+					<option> Estabilizador modelo 330 da linha Work Save</option>
+					<option> Estabilizador modelo 1000M</option>
+				</select>
+			<p class="center">Observações:</p>
+                <tr><td><textarea  id="textarea" name="textarea "   rows ="8" cols="52"   placeholder="Deixe aqui seu comentário."></textarea></td></label></tr><br><br>
+					<input id="seguir" type = "submit" onclick = "return validar()" value = "ENVIAR">
+					<input id="apagar" type = "reset" value = "LIMPAR">
+		</form>
+		<br><br><br><br>
+        	<hr color="black">
+		<footer>
+            <h5 class="ocultar" >João Teixeira 2023 - &copyTodos os direitos reservados</h5>
+        </footer>
+    </body>
+</html> 
