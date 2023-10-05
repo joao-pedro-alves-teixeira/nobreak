@@ -1,0 +1,166 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background:#79798b;
+    font-family: arial;
+    box-sizing:border-box;
+    font-family:"Times New Roman";
+}
+
+nav{
+    border-bottom:  solid 3px #000000; 
+    height: 100px;;
+}
+
+#nav{ 
+    list-style:none; /*retira marcadores*/
+    padding-left: 0px;
+    display: block;
+    float: right;
+    margin-right: 400px;	
+    margin-top:40px;	 
+    list-style:none;
+    padding:0px; 
+}
+
+#nav li {
+    float:left;
+    margin-left: 30px;
+}
+
+#nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 8px;
+    color:#000000;
+    font-weight: bold;
+    color:rgb(63, 63, 63);
+    display:inline;
+    display:inline-block;
+    text-decoration:none;
+    transition: border ;
+    font-size:22px;
+    font-family: anton;
+}  
+
+#nav a:hover{
+    border-bottom: 5px solid #ffffff;
+}
+
+ul#nav a.ativa{
+    border-bottom: 5px solid #ffffff;
+}
+
+section{
+     margin-top: 98px
+}
+
+#article{
+    width:930px;
+    height: 310px;
+    margin:15px auto; /* sem pixel pode ser % ou Em todos */
+    background-image: url(img/fundo.png);
+}
+    
+  
+header{
+    width:900px;
+    margin:15px auto; /* sem pixel pode ser % ou Em todos */
+}
+           
+ h5{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+            
+footer{
+    border-top: solid 2px #000000;
+}
+
+#footer{
+    margin-top: 112px;
+}
+
+.img{
+    float: right;
+}
+
+.imga{
+    float: left;
+}
+
+p{
+    color: white;
+    text-align:justify;
+    font-size: 22px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 9px;
+    margin-bottom: 3px;
+}
+
+#ed{
+    text-align:center;
+    margin-bottom: 156px;
+}
+               
+#title-center{
+    font-size: 38px;
+    margin-top: 50px;
+    text-align:center
+}
+
+.center{
+    text-align:center ;
+}
+                
+.title{
+    font-size: 38px;
+    margin-top: 50px;
+}
+                
+.semititle{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.semititle1{
+    font-size: 27px;
+    margin-top: 50px;
+}
+
+textarea{
+    resize: none;
+}
+            
+.ancora{
+    text-align: right;
+}
+                
+.ancora a img{
+    width: 3%;
+    transition: 0.9s;
+}
+                
+#a{
+    color: white;
+    font-size: 22px;
+}
+                
+.ancora a img:hover {
+    transform: rotate(180deg) ;
+}
+
+.borda{
+    border: 2px solid black;
+}
+                  
+/*responsividade para Ipad Pro*/	   
+@media screen and (min-width:375px) and (max-width:1024px){
+    body, div{ background: blue;}
+     #footer{ margin-left:0px;}
+}		
